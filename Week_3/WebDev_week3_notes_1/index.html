@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- This is needed for CSS fonts to work properly, different 
+        alphabets will have different charsets. -->
+        <meta charset = "UTF-8" />
+        <!-- Viewport sizing is needed for responsive layouts 
+        and media queries -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- This shows up in the tab of your browser. -->
+        <title>Layout 1 Pixels</title>
+        <!-- Link to your external stylesheet -->
+        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="layout.css" />
+    </head>
+    <!-- ------------------------ -->
+    <body>
+        <!-- Header, main, sidebar, and footer using floats and pixel dimensions. -->
+        <header>A Header Element with width 100%, menu layouts coming soon.</header>
+        <main class="clearfix">
+            <h1>Main Content Section, Heading Elements always display block by default.</h1>
+            <!-- <article>The New York Times!</article> -->
+            <article>
+                <h2>Article With 3 Sections</h2>
+                <section>Section 1</section>
+                <section>Section 2</section>
+                <section>Section 3</section>
+                <ul>
+                    <li><a href="#">item 1</a></li>
+                    <li><a href="#">item 2</a></li>
+                    <li><a href="#">item 3</a></li>
+                </ul>
+            </article>
+            <aside>
+                <h2>Side Bar</h2>
+                Still Considering what to write......
+                <ul class="vertical-menu">
+                    <li><a href="#">item 1</a></li>
+                    <li><a href="#">item 2</a></li>
+                    <li><a href="#">item 3</a></li>
+                </ul>
+            </aside>
+        </main>
+        <footer>
+            <h4>some footer text</h4>
+        </footer>
+    </body>
+</html>

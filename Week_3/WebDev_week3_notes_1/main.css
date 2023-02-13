@@ -1,0 +1,32 @@
+/* vebfgkhwerkgvkwjrfhwe */
+
+html, body, h1 {
+    margin: 0;
+}
+
+/* border-box tells the browser to account for any border and padding 
+in the window. */
+
+* { 
+    box-sizing: border-box;
+}
+
+/* When you floar you need a clearfixn on the container element to make 
+sure that it warps around the floated items. */
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    /* Ensures cross browser and legaxcy browser compatabbility */
+    height: 0;
+    font-size: 0;
+    content: '';
+    /* super paranoid mode */
+    display: hidden;
+}
+
+div, header, section, article, footer, main {
+    min-height: 100px;
+    /* RGBA A stands for alpha transparency */
+    background-color: rgba(0, 100, 255, 0.2);
+}

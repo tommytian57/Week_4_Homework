@@ -1,0 +1,416 @@
+Last login: Thu Jan 26 14:20:25 on ttys000
+➜  ~ cd Documents/web development/Assignment_1/tommy_webdev_assign_1
+cd: string not in pwd: Documents/web
+➜  ~ cd tommy_webdev_assign_1
+cd: no such file or directory: tommy_webdev_assign_1
+➜  ~ cd tommy_webdev_assign_1
+cd: no such file or directory: tommy_webdev_assign_1
+➜  ~ cd tommy_webdev_assign_1
+cd: no such file or directory: tommy_webdev_assign_1
+➜  ~ cd Document
+cd: no such file or directory: Document
+➜  ~ cd /Users/tft020507/Documents/web\ development/Assignment_1 
+➜  Assignment_1 cd ../      
+➜  web development cd Assignment_1
+➜  Assignment_1 git clone git@github.com:tommytian57/command-line-refrigerator-lab.git
+Cloning into 'command-line-refrigerator-lab'...
+remote: Enumerating objects: 36, done.
+remote: Counting objects: 100% (2/2), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 36 (delta 0), reused 0 (delta 0), pack-reused 34
+Receiving objects: 100% (36/36), 775.18 KiB | 482.00 KiB/s, done.
+Resolving deltas: 100% (4/4), done.
+➜  Assignment_1 command-line-refrigerator-lab 
+➜  command-line-refrigerator-lab git:(master) ls
+README.md freezer   fridge
+➜  command-line-refrigerator-lab git:(master) ~a
+zsh: no such user or named directory: a
+➜  command-line-refrigerator-lab git:(master) -a
+zsh: command not found: -a
+➜  command-line-refrigerator-lab git:(master) ls
+README.md freezer   fridge
+➜  command-line-refrigerator-lab git:(master) ls -a
+.         ..        .git      README.md freezer   fridge
+➜  command-line-refrigerator-lab git:(master) ls -la
+total 8
+drwxr-xr-x@  6 tft020507  staff   192 Jan 31 14:47 .
+drwxr-xr-x   6 tft020507  staff   192 Jan 31 14:47 ..
+drwxr-xr-x@ 12 tft020507  staff   384 Jan 31 14:47 .git
+-rw-r--r--@  1 tft020507  staff  1173 Jan 31 14:47 README.md
+drwxr-xr-x@  3 tft020507  staff    96 Jan 31 14:47 freezer
+drwxr-xr-x@  6 tft020507  staff   192 Jan 31 14:47 fridge
+➜  command-line-refrigerator-lab git:(master) cd .git
+➜  .git git:(master) ls -la
+total 40
+drwxr-xr-x@ 12 tft020507  staff   384 Jan 31 14:47 .
+drwxr-xr-x@  6 tft020507  staff   192 Jan 31 14:47 ..
+-rw-r--r--@  1 tft020507  staff    23 Jan 31 14:47 HEAD
+-rw-r--r--@  1 tft020507  staff   330 Jan 31 14:47 config
+-rw-r--r--@  1 tft020507  staff    73 Jan 31 14:47 description
+drwxr-xr-x@ 15 tft020507  staff   480 Jan 31 14:47 hooks
+-rw-r--r--@  1 tft020507  staff  1726 Jan 31 14:47 index
+drwxr-xr-x@  3 tft020507  staff    96 Jan 31 14:47 info
+drwxr-xr-x@  4 tft020507  staff   128 Jan 31 14:47 logs
+drwxr-xr-x@  4 tft020507  staff   128 Jan 31 14:47 objects
+-rw-r--r--@  1 tft020507  staff   114 Jan 31 14:47 packed-refs
+drwxr-xr-x@  5 tft020507  staff   160 Jan 31 14:47 refs
+➜  .git git:(master) cat config
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = git@github.com:tommytian57/command-line-refrigerator-lab.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+➜  .git git:(master) cd ../
+➜  command-line-refrigerator-lab git:(master) ls
+README.md freezer   fridge
+➜  command-line-refrigerator-lab git:(master) cd freezer 
+➜  freezer git:(master) ls -la
+total 136
+drwxr-xr-x@ 3 tft020507  staff     96 Jan 31 14:47 .
+drwxr-xr-x@ 6 tft020507  staff    192 Jan 31 14:47 ..
+-rw-r--r--@ 1 tft020507  staff  66170 Jan 31 14:47 kiwi.jpg
+➜  freezer git:(master) cd ../
+➜  command-line-refrigerator-lab git:(master) cd fridge 
+➜  fridge git:(master) cd ../
+➜  command-line-refrigerator-lab git:(master) cd fridge/produce 
+➜  produce git:(master) cd ../
+➜  fridge git:(master) ls
+dairy   drinks  meat    produce
+➜  fridge git:(master) cd produce/fruits
+➜  fruits git:(master) ls -la
+total 400
+drwxr-xr-x@ 5 tft020507  staff    160 Jan 31 14:47 .
+drwxr-xr-x@ 4 tft020507  staff    128 Jan 31 14:47 ..
+-rw-r--r--@ 1 tft020507  staff  45670 Jan 31 14:47 Red-Pepper.jpg
+-rw-r--r--@ 1 tft020507  staff  75192 Jan 31 14:47 ice-cubes.jpg
+-rw-r--r--@ 1 tft020507  staff  77672 Jan 31 14:47 sprite.jpeg
+➜  fruits git:(master) mv ice_cubes.jpg ../
+mv: rename ice_cubes.jpg to ../ice_cubes.jpg: No such file or directory
+➜  fruits git:(master) mv ice-cubes.jpg ../
+➜  fruits git:(master) ✗ mv ice-cubes.jpg ../../../freezer 
+mv: rename ice-cubes.jpg to ../../../freezer/ice-cubes.jpg: No such file or directory
+➜  fruits git:(master) ✗ mv ice-cubes.jpg ../../../freezer 
+mv: rename ice-cubes.jpg to ../../../freezer/ice-cubes.jpg: No such file or directory
+➜  fruits git:(master) ✗ ls
+Red-Pepper.jpg sprite.jpeg
+➜  fruits git:(master) ✗ cd ../
+➜  produce git:(master) ✗ ls
+fruits        ice-cubes.jpg vegetables
+➜  produce git:(master) ✗ mv ice-cubes.jpg ../../freezer 
+➜  produce git:(master) ✗ ls
+fruits     vegetables
+➜  produce git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ ls
+dairy   drinks  meat    produce
+➜  fridge git:(master) ✗ cd ../
+➜  command-line-refrigerator-lab git:(master) ✗ ls
+README.md freezer   fridge
+➜  command-line-refrigerator-lab git:(master) ✗ cd freezer 
+➜  freezer git:(master) ✗ ls
+ice-cubes.jpg kiwi.jpg
+➜  freezer git:(master) ✗ mv kiwi.jpg ../fridge 
+➜  freezer git:(master) ✗ cd ../
+➜  command-line-refrigerator-lab git:(master) ✗ cd fridge 
+➜  fridge git:(master) ✗ ls
+dairy    drinks   kiwi.jpg meat     produce
+➜  fridge git:(master) ✗ cd ../
+➜  command-line-refrigerator-lab git:(master) ✗ cd freezer
+➜  freezer git:(master) ✗ ls
+ice-cubes.jpg
+➜  freezer git:(master) ✗ cd ../
+➜  command-line-refrigerator-lab git:(master) ✗ cd fridge 
+➜  fridge git:(master) ✗ cd produce/food
+cd: no such file or directory: produce/food
+➜  fridge git:(master) ✗ cd produce
+➜  produce git:(master) ✗ ls
+fruits     vegetables
+➜  produce git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ cd ../
+➜  command-line-refrigerator-lab git:(master) ✗ ls
+README.md freezer   fridge
+➜  command-line-refrigerator-lab git:(master) ✗ cd fridge
+➜  fridge git:(master) ✗ ls
+dairy    drinks   kiwi.jpg meat     produce
+➜  fridge git:(master) ✗ cd meat   
+➜  meat git:(master) ✗ ls
+orange-juice.jpg watermelon.jpg
+➜  meat git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ mv kiwi.jpg ../fridge/produce 
+➜  fridge git:(master) ✗ ls
+dairy   drinks  meat    produce
+➜  fridge git:(master) ✗ cd produce
+➜  produce git:(master) ✗ ls
+fruits     kiwi.jpg   vegetables
+➜  produce git:(master) ✗ mv kiwi.jpg produce/fruits
+mv: rename kiwi.jpg to produce/fruits: No such file or directory
+➜  produce git:(master) ✗ mv kiwi.jpg fruits
+➜  produce git:(master) ✗ ls
+fruits     vegetables
+➜  produce git:(master) ✗ cd fruits
+➜  fruits git:(master) ✗ ls
+Red-Pepper.jpg kiwi.jpg       sprite.jpeg
+➜  fruits git:(master) ✗ cd ../
+➜  produce git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ cd ../
+➜  command-line-refrigerator-lab git:(master) ✗ cd freezer 
+➜  freezer git:(master) ✗ ls
+ice-cubes.jpg
+➜  freezer git:(master) ✗ cd ../
+➜  command-line-refrigerator-lab git:(master) ✗ cd fridge
+➜  fridge git:(master) ✗ ls
+dairy   drinks  meat    produce
+➜  fridge git:(master) ✗ cd dairy
+➜  dairy git:(master) ✗ ls 
+ben-and-jerrys-ice-cream.jpg steak.jpg
+milk.jpg
+➜  dairy git:(master) ✗ mv ben-and-jerrys-ice-cream.jpg ../
+➜  dairy git:(master) ✗ ls
+milk.jpg  steak.jpg
+➜  dairy git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ ls
+ben-and-jerrys-ice-cream.jpg meat
+dairy                        produce
+drinks
+➜  fridge git:(master) ✗ mv ben-and-jerrys-ice-cream.jpg ../
+➜  fridge git:(master) ✗ cd ../
+➜  command-line-refrigerator-lab git:(master) ✗ cd freezer
+➜  freezer git:(master) ✗ ls
+ice-cubes.jpg
+➜  freezer git:(master) ✗ cd ../
+➜  command-line-refrigerator-lab git:(master) ✗ ls
+README.md                    freezer
+ben-and-jerrys-ice-cream.jpg fridge
+➜  command-line-refrigerator-lab git:(master) ✗ mv ben-and-jerrys-ice-cream.jpg freezer
+➜  command-line-refrigerator-lab git:(master) ✗ cd freezer
+➜  freezer git:(master) ✗ ls
+ben-and-jerrys-ice-cream.jpg ice-cubes.jpg
+➜  freezer git:(master) ✗ cd ../
+➜  command-line-refrigerator-lab git:(master) ✗ cd fridge 
+➜  fridge git:(master) ✗ cd drinks
+➜  drinks git:(master) ✗ ls
+butter.jpg    carrots.jpg   cockroach.jpg
+➜  drinks git:(master) ✗ mv butter.jpg ../
+➜  drinks git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ ls
+butter.jpg dairy      drinks     meat       produce
+➜  fridge git:(master) ✗ mv butter.jpg dairy
+➜  fridge git:(master) ✗ ls
+dairy   drinks  meat    produce
+➜  fridge git:(master) ✗ cd dairy
+➜  dairy git:(master) ✗ ls
+butter.jpg milk.jpg   steak.jpg
+➜  dairy git:(master) ✗ mv steak.jpg meat
+➜  dairy git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ cd meat
+➜  meat git:(master) ✗ ls
+orange-juice.jpg watermelon.jpg
+➜  meat git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ cd dairy
+➜  dairy git:(master) ✗ ls
+butter.jpg meat       milk.jpg
+➜  dairy git:(master) ✗ ls
+butter.jpg meat       milk.jpg
+➜  dairy git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ ls
+dairy   drinks  meat    produce
+➜  fridge git:(master) ✗ cd meat
+➜  meat git:(master) ✗ ls
+orange-juice.jpg watermelon.jpg
+➜  meat git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ cd dairy
+➜  dairy git:(master) ✗ mv meat steak.jpg
+➜  dairy git:(master) ✗ ls
+butter.jpg milk.jpg   steak.jpg
+➜  dairy git:(master) ✗ mv steak.jpg ../
+➜  dairy git:(master) ✗ cd .//
+➜  dairy git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ ls
+dairy     drinks    meat      produce   steak.jpg
+➜  fridge git:(master) ✗ mv steak.jpg meat
+➜  fridge git:(master) ✗ fridge
+zsh: command not found: fridge
+➜  fridge git:(master) ✗ ls
+dairy   drinks  meat    produce
+➜  fridge git:(master) ✗ cd meat
+➜  meat git:(master) ✗ ls
+orange-juice.jpg steak.jpg        watermelon.jpg
+➜  meat git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ cd drink
+cd: no such file or directory: drink
+➜  fridge git:(master) ✗ cd drinks 
+➜  drinks git:(master) ✗ ls
+carrots.jpg   cockroach.jpg
+➜  drinks git:(master) ✗ rm cockroach.jpg 
+➜  drinks git:(master) ✗ ls
+carrots.jpg
+➜  drinks git:(master) ✗ mv carrots.jpg ../
+➜  drinks git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ ls
+carrots.jpg dairy       drinks      meat        produce
+➜  fridge git:(master) ✗ mv carrots.jpg produce/vegetables 
+➜  fridge git:(master) ✗ cd produce
+➜  produce git:(master) ✗ cd vegetables 
+➜  vegetables git:(master) ✗ ls
+carrots.jpg   cockroach.jpg fish.png
+➜  vegetables git:(master) ✗ rm cockroach.jpg 
+➜  vegetables git:(master) ✗ ls
+carrots.jpg fish.png
+➜  vegetables git:(master) ✗ mv fish.png ../
+➜  vegetables git:(master) ✗ cd ../
+➜  produce git:(master) ✗ ls   
+fish.png   fruits     vegetables
+➜  produce git:(master) ✗ mv fish.png ../
+➜  produce git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ ls
+dairy    drinks   fish.png meat     produce
+➜  fridge git:(master) ✗ mv fish.png meat
+➜  fridge git:(master) ✗ cd meat
+➜  meat git:(master) ✗ ls
+fish.png         orange-juice.jpg steak.jpg        watermelon.jpg
+➜  meat git:(master) ✗ mv orange-juice.jpg ../
+➜  meat git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ ls
+dairy            meat             produce
+drinks           orange-juice.jpg
+➜  fridge git:(master) ✗ mv orange-juice.jpg drinks
+➜  fridge git:(master) ✗ cd drinks
+➜  drinks git:(master) ✗ ls
+orange-juice.jpg
+➜  drinks git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ cd produce
+➜  produce git:(master) ✗ cd fruits
+➜  fruits git:(master) ✗ ls
+Red-Pepper.jpg kiwi.jpg       sprite.jpeg
+➜  fruits git:(master) ✗ mv sprite.jpeg ../
+➜  fruits git:(master) ✗ cd ../
+➜  produce git:(master) ✗ ls
+fruits      sprite.jpeg vegetables
+➜  produce git:(master) ✗ mv sprite.jpeg ../
+➜  produce git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ ls
+dairy       drinks      meat        produce     sprite.jpeg
+➜  fridge git:(master) ✗ mv sprite.jpeg drinks
+➜  fridge git:(master) ✗ cd drinks
+➜  drinks git:(master) ✗ ls
+orange-juice.jpg sprite.jpeg
+➜  drinks git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ cd meat
+➜  meat git:(master) ✗ ls
+fish.png       steak.jpg      watermelon.jpg
+➜  meat git:(master) ✗ mv watermelon.jpg ../    
+➜  meat git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ ls
+dairy          drinks         meat           produce        watermelon.jpg
+➜  fridge git:(master) ✗ mv watermelon.jpg produce/fruits
+➜  fridge git:(master) ✗ cd fruits
+cd: no such file or directory: fruits
+➜  fridge git:(master) ✗ cd produce
+➜  produce git:(master) ✗ cd fruits
+➜  fruits git:(master) ✗ ls
+Red-Pepper.jpg kiwi.jpg       watermelon.jpg
+➜  fruits git:(master) ✗ mv Red-Pepper.jpg ../
+➜  fruits git:(master) ✗ cd ../
+➜  produce git:(master) ✗ ls
+Red-Pepper.jpg fruits         vegetables
+➜  produce git:(master) ✗ mv Red-Pepper.jpg vegetables 
+➜  produce git:(master) ✗ cd vegetables 
+➜  vegetables git:(master) ✗ ls
+Red-Pepper.jpg carrots.jpg
+➜  vegetables git:(master) ✗ cd ../
+➜  produce git:(master) ✗ cd fruits
+➜  fruits git:(master) ✗ ls
+kiwi.jpg       watermelon.jpg
+➜  fruits git:(master) ✗ cd ../../
+➜  fridge git:(master) ✗ cd ../
+➜  command-line-refrigerator-lab git:(master) ✗ ls
+README.md freezer   fridge
+➜  command-line-refrigerator-lab git:(master) ✗ cd freezer
+➜  freezer git:(master) ✗ ls
+ben-and-jerrys-ice-cream.jpg ice-cubes.jpg
+➜  freezer git:(master) ✗ cd ../
+➜  command-line-refrigerator-lab git:(master) ✗ cd fridge 
+➜  fridge git:(master) ✗ ls
+dairy   drinks  meat    produce
+➜  fridge git:(master) ✗ cd dairy
+➜  dairy git:(master) ✗ ls
+butter.jpg milk.jpg
+➜  dairy git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ cd drinks 
+➜  drinks git:(master) ✗ ls
+orange-juice.jpg sprite.jpeg
+➜  drinks git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ cd meat
+➜  meat git:(master) ✗ ls
+fish.png  steak.jpg
+➜  meat git:(master) ✗ cd ../
+➜  fridge git:(master) ✗ cd produce
+➜  produce git:(master) ✗ ls
+fruits     vegetables
+➜  produce git:(master) ✗ cd fruits
+➜  fruits git:(master) ✗ ls
+kiwi.jpg       watermelon.jpg
+➜  fruits git:(master) ✗ cd ../
+➜  produce git:(master) ✗ cd vegetables 
+➜  vegetables git:(master) ✗ ls
+Red-Pepper.jpg carrots.jpg
+➜  vegetables git:(master) ✗ touch cucumber.txt
+➜  vegetables git:(master) ✗ touch spinach.txt
+➜  vegetables git:(master) ✗ cd ../
+➜  produce git:(master) ✗ cd fruits 
+➜  fruits git:(master) ✗ touch strawberry.txt
+➜  fruits git:(master) ✗  cd ../../
+➜  fridge git:(master) ✗ cd ../
+➜  command-line-refrigerator-lab git:(master) ✗ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+➜  command-line-refrigerator-lab git:(master) ✗ git add .
+➜  command-line-refrigerator-lab git:(master) ✗ git commit -m
+error: switch `m' requires a value
+➜  command-line-refrigerator-lab git:(master) ✗ git commit -m "I'm saving my work"
+[master ec642c6] I'm saving my work
+ 16 files changed, 0 insertions(+), 0 deletions(-)
+ rename {fridge/dairy => freezer}/ben-and-jerrys-ice-cream.jpg (100%)
+ rename {fridge/produce/fruits => freezer}/ice-cubes.jpg (100%)
+ rename fridge/{drinks => dairy}/butter.jpg (100%)
+ delete mode 100644 fridge/drinks/cockroach.jpg
+ rename fridge/{meat => drinks}/orange-juice.jpg (100%)
+ rename fridge/{produce/fruits => drinks}/sprite.jpeg (100%)
+ rename fridge/{produce/vegetables => meat}/fish.png (100%)
+ rename fridge/{dairy => meat}/steak.jpg (100%)
+ rename {freezer => fridge/produce/fruits}/kiwi.jpg (100%)
+ create mode 100644 fridge/produce/fruits/strawberry.txt
+ rename fridge/{meat => produce/fruits}/watermelon.jpg (100%)
+ rename fridge/produce/{fruits => vegetables}/Red-Pepper.jpg (100%)
+ rename fridge/{drinks => produce/vegetables}/carrots.jpg (100%)
+ delete mode 100644 fridge/produce/vegetables/cockroach.jpg
+ create mode 100644 fridge/produce/vegetables/cucumber.txt
+ create mode 100644 fridge/produce/vegetables/spinach.txt
+➜  command-line-refrigerator-lab git:(master) git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'github.com:tommytian57/command-line-refrigerator-lab.git'
+➜  command-line-refrigerator-lab git:(master) git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+➜  command-line-refrigerator-lab git:(master) git push
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (11/11), 1.09 KiB | 1.09 MiB/s, done.
+Total 11 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:tommytian57/command-line-refrigerator-lab.git
+   43e56c4..ec642c6  master -> master
+➜  command-line-refrigerator-lab git:(master) 

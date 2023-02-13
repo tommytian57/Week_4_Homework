@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+}
+
+div, header {
+    background-color: rgba(0, 200, 255, 0.4);
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border: 1px, dashed, blueviolet;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: gray;
+    position: fixed;
+    /* top: 10%;
+    left: 30px; */
+    z-index: 100;
+}
+
+.bottomRight {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.wrapperRelative {
+    position: relative;
+    padding-top: 100px;
+    width: 50%;
+    /* 100% viewport height */
+    height: 100vh;
+}
+
+.absoluteRelative {
+    position: absolute;
+    right: 0;
+    top: 300px;
+}

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Kaushan+Script&display=swap")
+
+/* */
+/* background*/
+/* html {
+    background: url(In_Class_Exercise/bg.jpg) no-repeat center center fixed;
+} */
+
+/* container */
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 75px;
+}
+
+/* photo wrapper */
+.polaroid {
+    position: relative;
+    width: 240px;
+    display: inline-block;
+    margin: 20px;
+}
+
+/* look for an img tag
+inside sth with the class polaroid */
+.polaroid img{
+    width: 100%;
+    height: auto;
+    border: 10px solid #ccc;
+    border-bottom-width: 45px;
+    box-shadow: 10px 10px 5px rgba(10,10,10,0.5);
+}
+
+/* paragraphs inside .polaroid divs */
+.polaroid p {
+    font-family: 'Kaushan Script', cursive;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    font-size: 18px;
+}

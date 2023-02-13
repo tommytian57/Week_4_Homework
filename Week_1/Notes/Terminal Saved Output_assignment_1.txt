@@ -1,0 +1,96 @@
+Last login: Tue Jan  3 13:59:39 on console
+➜  ~ rhewiuyrtiw4
+zsh: command not found: rhewiuyrtiw4
+➜  ~ 
+➜  ~ 
+➜  ~ 
+➜  ~ top
+➜  ~ top
+➜  ~ top
+➜  ~ % ssh-keygen -t ed25519 -C "daisdroner@gmail.com"
+fg: no current job
+➜  ~ % ssh-keygen -t ed25519 -C "tommytian57"
+fg: no current job
+➜  ~ 
+➜  ~ ssh-keygen -t ed25519 -C "tommytian57" 
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/Users/tft020507/.ssh/id_ed25519): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/tft020507/.ssh/id_ed25519
+Your public key has been saved in /Users/tft020507/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:7zfFtqpP8O+/bjLuAiwmOjmtojM07UKyQo54NMJWL0Y tommytian57
+The key's randomart image is:
++--[ED25519 256]--+
+|                 |
+|                 |
+|                 |
+|   E             |
+|. + .   S .  .   |
+|oBo+ o o + o  +  |
+|X++.= o . o oo . |
+|B+.* .   . oo+.. |
+|++o.+     o+**B+o|
++----[SHA256]-----+
+➜  ~ cd /Users/tft020507/WebDev/.ssh
+cd: no such file or directory: /Users/tft020507/WebDev/.ssh
+➜  ~ cd /Users/tft020507/Documents/web development/.ssh
+cd: string not in pwd: /Users/tft020507/Documents/web
+➜  ~ cd ~/.ssh
+➜  .ssh ls
+id_ed25519      id_rsa          known_hosts
+id_ed25519.pub  id_rsa.pub      known_hosts.old
+➜  .ssh 
+➜  .ssh 
+➜  .ssh 
+➜  .ssh cat id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHqkoOHy7+maNleACjvNV8mIQg3BU1UkkJIYeqlXfQev tommytian57
+➜  .ssh cd /Users/tft020507/Documents/web\ development 
+➜  web development cd /Users/tft020507/Documents/web\ development/Assignment_1
+➜  Assignment_1 git clone git@github.com:tommytian57/tommy_webdev_assign_1.git
+Cloning into 'tommy_webdev_assign_1'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+➜  Assignment_1 cd tommy_webdev_assign_1
+➜  tommy_webdev_assign_1 git:(main) ls
+README.md
+➜  tommy_webdev_assign_1 git:(main) open .
+➜  tommy_webdev_assign_1 git:(main) ✗ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  tommy_webdev_assign_1 git:(main) ✗ git add .
+➜  tommy_webdev_assign_1 git:(main) ✗ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   index.html
+
+➜  tommy_webdev_assign_1 git:(main) ✗ git commit -m "Added Project files"
+[main cd37d11] Added Project files
+ 1 file changed, 13 insertions(+)
+ create mode 100644 index.html
+➜  tommy_webdev_assign_1 git:(main) git push origin name
+error: src refspec name does not match any
+error: failed to push some refs to 'github.com:tommytian57/tommy_webdev_assign_1.git'
+➜  tommy_webdev_assign_1 git:(main) git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 739 bytes | 739.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:tommytian57/tommy_webdev_assign_1.git
+   43f865d..cd37d11  main -> main
+➜  tommy_webdev_assign_1 git:(main) 

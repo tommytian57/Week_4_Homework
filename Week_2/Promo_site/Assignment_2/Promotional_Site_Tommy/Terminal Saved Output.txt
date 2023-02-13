@@ -1,0 +1,61 @@
+Last login: Tue Jan 31 14:40:35 on ttys000
+➜  ~ cd /Users/tft020507/Documents/web\ development/Promo_site 
+➜  Promo_site cd Assignment_2 
+➜  Assignment_2 git clone git@github.com:tommytian57/Promotional_Site_Tommy.git
+Cloning into 'Promotional_Site_Tommy'...
+warning: You appear to have cloned an empty repository.
+➜  Assignment_2 touch index.html
+➜  Assignment_2 touch style.css
+➜  Assignment_2 mv indel.html Promotional_Site_Tommy 
+mv: rename indel.html to Promotional_Site_Tommy/indel.html: No such file or directory
+➜  Assignment_2 cd ../ 
+➜  Promo_site cd Assignment_2    
+➜  Assignment_2 mv index.html Promotional_Site_Tommy 
+➜  Assignment_2 mv style.css Promotional_Site_Tommy 
+➜  Assignment_2 ls
+Promotional_Site_Tommy
+➜  Assignment_2 ls
+Promotional_Site_Tommy
+➜  Assignment_2 code .
+➜  Assignment_2 code .
+➜  Assignment_2 i
+  [Restored Feb 6, 2023 at 8:50:11 PM]
+Last login: Mon Feb  6 20:50:00 on console
+Restored session: Mon Feb  6 20:46:09 EST 2023
+➜  Assignment_2 cd ../
+➜  Promo_site cd ../
+➜  web development ls
+Assignment_1 Promo_site
+➜  web development cd promo_site
+➜  promo_site ls
+Assignment_2
+➜  promo_site cd Assignment_2 
+➜  Assignment_2 ls
+Promotional_Site_Tommy
+➜  Assignment_2 cd Promotional_Site_Tommy 
+➜  Promotional_Site_Tommy git:(main) ✗ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+➜  Promotional_Site_Tommy git:(main) ✗ git add .
+➜  Promotional_Site_Tommy git:(main) ✗ git commit
+Aborting commit due to empty commit message.
+➜  Promotional_Site_Tommy git:(main) ✗ git add . 
+➜  Promotional_Site_Tommy git:(main) ✗ git commit -m "I'm saving my work"
+[main (root-commit) 8953058] I'm saving my work
+ 4 files changed, 98 insertions(+)
+ create mode 100644 Boeing 747-400.jpg
+ create mode 100644 index.html
+ create mode 100644 index2.html
+ create mode 100644 style.css
+➜  Promotional_Site_Tommy git:(main) git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 71.86 KiB | 14.37 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:tommytian57/Promotional_Site_Tommy.git
+ * [new branch]      main -> main
+➜  Promotional_Site_Tommy git:(main) yarn run docs
