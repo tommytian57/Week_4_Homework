@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+html, body {
+  margin: 0;
+}
+
+html {
+  background: url(../img/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Nav Bar Styles */
+header {
+  width: 80%;
+  padding: 0 10%;
+  height: 50px;
+  position: fixed;
+  margin-bottom: 10px;
+  z-index: 10;
+  background-color: black;
+  /* make a tiled background in the header from
+  subtle patterns website */
+  background: url(../img/spikes.jpg);
+  /* just an example of overflow */
+  /* overflow: hidden; */
+}
+
+header h1 {
+  color: #333;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kaushan Script', cursive;
+}
+
+header nav {
+  /* This is a good example of when to use display flex */
+  display: inline-block;
+  float: right; 
+}
+
+header nav ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(40, 40, 40,0.1);
+}
+
+nav li {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  width:120px;
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color:#333;
+  /* do this to fill up the width and height of 
+  the LI parent for clickable area */
+  display: block;
+  /* text-align: center; */
+  /* always define the transition items/time in the starting state */
+  transition: all 1s;
+}
+
+nav a:hover {
+  background-color: rgba(40, 40, 40,0.5);
+  color: #444;
+}
+
+nav a.active {
+  background-color: #444;
+  color: white;
+}
+
+/* Transitions */
+.scaleUp {
+  transform: scale(1.2);
+}
+
+.scaleX {
+  transform: scale(2,1);
+}
+
+.scaleY {
+  transform: scale(1,2);
+}
+
+.skewX {
+  transform: skewX(-20deg);
+}
+
+.skewY {
+  transform: skewY(-20deg);
+}
+
+.skewBoth {
+  transform: skew(10deg, 30deg);
+}
+
+.rotX {
+  transform: rotateX(120deg);
+}
+
+.rotY {
+  transform: rotateY(120deg);
+}
+
+.rotZ {
+  transform: rotateZ(120deg);
+}
+
+/* combining transforms and transitions */
+.rotateLeft {
+  transform: rotate(-10deg);
+  transition: transform 5s ease;
+}
+
+.rotateLeft:hover {
+  transform: rotate(10deg);
+  cursor: pointer;
+}
+
+.skewHover {
+  transform: skewX(30deg);
+  transition: transform 5s ease;
+}
+
+.skewHover:hover {
+  transform: skewX(-30deg);
+}
+
+.scaleHover {
+  transform: scale(0.5);
+  transition: transform 5s ease;
+}
+
+.scaleHover:hover {
+  transform: scale(1.5);
+}
+
+.colorSwap {
+  filter: grayscale(100%);
+  transition: all 5s ease;
+}
+
+.colorSwap:hover {
+  filter: grayscale(0%);
+}
+
+
+/* Container */
+.container{
+  width: 900px;
+  margin: 0 auto;
+  padding:75px;
+}
+
+/* IMG Wrapper */
+.polaroid {
+  position: relative;
+  width: 240px;
+  display: inline-block;
+  margin:20px;
+}
+
+/* IMG with Border */
+.polaroid img {
+  width: 100%;
+  height: auto;
+  border: 10px solid #ccc;
+  border-bottom-width: 45px;
+  /* h-shadow | v-shadow | blur | spread | color */
+  box-shadow: 10px 10px 10px 5px rgba(10,10,10,0.5);
+}
+
+/* Labels */
+.polaroid p {
+  font-family: 'Kaushan Script', cursive;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
